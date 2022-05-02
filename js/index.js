@@ -419,7 +419,7 @@ const projects = [
     hasLiveLink: true,
     hasCheckRepositoryButton: false,
     liveLink:
-      "https://app.netlify.com/sites/mamaearth-clone-u2",
+      "https://mamaearth-clone-u2.netlify.app/",
     technologiesUsed: ["HTML", "CSS", "Javascript", "Bootstrap"],
     icons: [
       "simple-icons:dart",
