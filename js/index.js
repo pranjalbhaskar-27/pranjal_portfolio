@@ -420,14 +420,16 @@ const projects = [
     hasCheckRepositoryButton: false,
     liveLink:
       "https://mamaearth-clone-u2.netlify.app/",
+      
     technologiesUsed: ["HTML", "CSS", "Javascript", "Bootstrap"],
     icons: [
-      "simple-icons:dart",
+      "arcticons:github",
       "cib:flutter",
       "mdi:language-javascript",
       "cib:postgresql",
     ],
     screenshotSrc: "https://camo.githubusercontent.com/d869e36f9071086bef52f96407a62695f0c364bc32bf67b80666bd455ba58a57/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f312a68577875504250684c76614a57465a4d4570387766412e706e67",
+    githubLink:"https://github.com/pranjalbhaskar-27/MamaEarth_Group_Project_U2.git",
   },
   {
     title: "Shopperstop.com clone",
@@ -446,7 +448,9 @@ const projects = [
       "simple-icons:mongodb",
     ],
     screenshotSrc: "https://miro.medium.com/max/1400/1*0rR7a6sKKQyqxwyV64UXGg.png",
+    githubLink:"https://github.com/pranjalbhaskar-27/U4-Proj-ShoppersStop.git",
   },
+  
   // 
 ];
 (function () {
@@ -459,6 +463,7 @@ const projects = [
         <span class="iconify" data-inline="false" data-icon="mdi:web"></span>
         </a></button>`
       : ``;
+      
     let checkRepositoryButtonCode = element.hasCheckRepositoryButton
       ? `<button class="check-repo" aria-label="Github Link"><a rel="noopener" target="_blank" aria-label="Github Link" href="${element.githubLink}">Check Repository</a></button>`
       : ``;
@@ -488,6 +493,7 @@ const projects = [
 (function () {
   let htmlCode = ``;
   projects.forEach((element, index) => {
+    var gitlink=element.githubLink
     let aosAttribute =
       index % 2 === 0 ? `data-aos="fade-left"` : `data-aos="fade-right"`;
     aosAttribute += ` data-aos-offset="300" data-aos-easing="ease-in-sine"`;
@@ -506,6 +512,7 @@ const projects = [
         </header>
         <main>
             <h1>${element.title}</h1>
+            <a href="${element.githubLink}"><p>Github-Repo</p></a>
             <p>${element.description}</p>
         </main>
         <footer class="card-footer">
